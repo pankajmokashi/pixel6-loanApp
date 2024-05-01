@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Details For Loan Approval.</h1>
+      <form id="form">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <div class="input-field">
+            <input type="text" name="name" id="name" />
+            <div id="err-name" class="error"></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <div class="input-field">
+            <input type="text" name="email" id="email" />
+            <div id="err-email" class="error"></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="pan">PAN</label>
+          <div class="input-field">
+            <input type="text" name="pan" id="pan" />
+            <div id="err-pan" class="error"></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="loan">Loan Ammount</label>
+          <div class="input-field">
+            <input
+              type="text"
+              name="loan"
+              id="loan"
+              pattern="[0-9]*"
+              maxlength="9"
+            />
+            <div
+              class="loan-text"
+              id="in-words"
+              style="text-transform: capitalize"
+            ></div>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for=""></label>
+          <div class="input-field">
+            <div id="mandatory" class="error"></div>
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

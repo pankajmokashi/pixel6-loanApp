@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    padding: 2rem;
+    width: calc(100% - 4rem);
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+form .otp {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 0rem 0.5rem 0.8rem;
+    width: 135px;
+    letter-spacing: 1rem;
+    text-align: center;
+}
+
+form .btn {
+    padding: 0.5rem;
+    width: 150px;
+    height: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+form .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+form .error {
+    height: 2rem;
+    color: red;
+}
+
+form .otp-div {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ----------------meadia tags------------------ */
+
+@media screen and (min-width: 700px) {
+    .container {
+        margin-top: 4rem;
+        width: 700px;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        gap: 1rem;
+    }
+
+    form .otp {
+        font-size: 2rem;
+        padding: 0.5rem;
+        width: calc(300px - 1rem);
+        letter-spacing: 1rem;
+    }
+
+    form .otp-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    form .btn {
+        padding: 0.5rem;
+        width: calc(150px - 1rem);
+    }
+
+    form .error {
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form .otp-div {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
